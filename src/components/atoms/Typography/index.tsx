@@ -2,7 +2,7 @@ import Typography from '@mui/material/Typography';
 import { SxProps } from '@mui/material/styles';
 import React from 'react';
 
-export interface TextProps {
+export interface TypographyProps {
   variant?:
     | 'title'
     | 'heading1'
@@ -11,20 +11,15 @@ export interface TextProps {
     | 'caption'
     | 'button'
     | 'body1';
-  textBody: string;
+  text: string;
   sx?: SxProps;
 }
 
-const Text = ({ variant, textBody, sx }: TextProps) => {
+const Text = ({ variant, text, sx }: TypographyProps) => {
   return (
     <Typography variant={variant} sx={sx}>
-      {textBody}
+      {text}
     </Typography>
   );
 };
-
-Text.defaultProps = {
-  variant: 'title',
-};
-
 export default Text;

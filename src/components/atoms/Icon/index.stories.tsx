@@ -1,21 +1,21 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
-import Icons from '.';
+import Icon from '.';
 import Logo from '../../../../public/assests/icons/SeederLogo.svg';
 
-const meta: Meta<typeof Icons> = {
-  title: 'atoms/Icons',
-  component: Icons,
+const meta: Meta<typeof Icon> = {
+  title: 'Atoms/Icon',
+  component: Icon,
   tags: ['autodocs'],
   argTypes: { clickHandler: { action: 'clicked' } },
 };
 
 export default meta;
 
-type Story = StoryObj<typeof Icons>;
+type Story = StoryObj<typeof Icon>;
 
 export const Primary: Story = {
-  render: () => <Icons src={Logo} alt='logo' />,
+  render: () => <Icon src={Logo} alt='logo' />,
 };
 
 export const Secondary: Story = {

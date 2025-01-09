@@ -1,0 +1,59 @@
+{
+    "contracts": [
+      {
+        "id": 1,
+        "name": "Contract1",
+        "type": "Monthly",
+        "status": "Available",
+        "perPayment": 12000,
+        "termLength": 12,
+        "paymentAmount": 82,
+        "totalFinanced": 1,
+        "totalAvailable": 30
+      },
+      {
+        "id": 2,
+        "name": "Contract2",
+        "type": "Monthly",
+        "status": "Available",
+        "perPayment": 6000,
+        "termLength": 12,
+        "paymentAmount": 47,
+        "totalFinanced": 2,
+        "totalAvailable": 21
+      },
+      {
+        "id": 3,
+        "name": "Contract3",
+        "type": "Monthly",
+        "status": "Available",
+        "perPayment": 6000,
+        "termLength": 12,
+        "paymentAmount": 72,
+        "totalFinanced": 3,
+        "totalAvailable": 72
+      },
+      {
+        "id": 4,
+        "name": "Contract4",
+        "type": "Monthly",
+        "status": "Available",
+        "perPayment": 6000,
+        "termLength": 12,
+        "paymentAmount": 77,
+        "totalFinanced": 4,
+        "totalAvailable": 29
+      },
+      {
+        "id": 5,
+        "name": "Contract5",
+        "type": "Monthly",
+        "perPayment": 6000,
+        "status": "Available",
+        "termLength": 12,
+        "paymentAmount": 61,
+        "totalFinanced": 5,
+        "totalAvailable": 29
+      }
+    ]
+}    

@@ -3,7 +3,7 @@ import Text from '../../atoms/Typography';
 import { Box, Stack, ThemeProvider, styled } from '@mui/material';
 import BannerImage from '../../../../public/assests/images/celebration.svg';
 import TextButton from '../../atoms/Button';
-import theme from '../../../themes';
+import theme from '../../../theme';
 
 export interface BannerProps {
   clickHandler?: () => void;
@@ -56,12 +56,12 @@ const Banner = ({ clickHandler }: BannerProps) => {
         <StyledStack>
           <StyledTextBox data-testid='celebration-message'>
             <Text
-              textBody='Congratulations you are ready to start!'
+              text='Congratulations you are ready to start!'
               variant='heading1'
               sx={{ color: 'white' }}
             />
             <Text
-              textBody='You are approved for funding. We are ready to advance you upto $8.8M'
+              text='You are approved for funding. We are ready to advance you upto $8.8M'
               variant='body1'
               sx={{ color: 'white' }}
             />

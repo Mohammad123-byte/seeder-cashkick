@@ -4,7 +4,7 @@ import CardItem from '../CardItem';
 import Calender from '../../../../public/assests/icons/calendar.svg';
 import Percentage from '../../../../public/assests/icons/percentage-square.svg';
 import DocumentDownload from '../../../../public/assests/icons/document-download.svg';
-import theme from '../../../themes';
+import theme from '../../../theme';
 
 interface CardDataProps {
   calenderHeading?: string;

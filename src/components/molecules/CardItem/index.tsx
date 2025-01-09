@@ -1,8 +1,8 @@
 import React from 'react';
 import { Stack, Box, styled } from '@mui/material';
 import Text from '../../atoms/Typography';
-import Icons from '../../atoms/Icons';
-import theme from '../../../themes';
+import Icons from '../../atoms/Icon';
+import theme from '../../../theme';
 
 import InfoCircle from '../../../../public/assests/icons/info-circle.svg';
 const IconBox = styled(Box)({
@@ -12,7 +12,7 @@ const IconBox = styled(Box)({
   alignItems: 'center',
   padding: '20px',
   width: '33%',
-  //height: '5%',
+  height: '5%',
   borderRadius: '12px',
   border: '1px solid #28272B',
 });
@@ -36,14 +36,14 @@ const CardItem = (props: CardItemProps) => {
       </IconBox>
       <TextWithIcon>
         <Text
-          textBody={props.subHeadingText}
+          text={props.subHeadingText}
           variant='body1'
           sx={{ color: theme.palette.primary.primaryTextMidEmp }}
         />
         <Icons src={InfoCircle} alt='Info Circle Icon' />
       </TextWithIcon>
       <Text
-        textBody={props.headingText}
+        text={props.headingText}
         variant='heading1'
         sx={{
           color: theme.palette.primary.primaryTextHighEmp,

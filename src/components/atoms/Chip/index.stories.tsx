@@ -1,7 +1,7 @@
 import React from 'react';
 import { Meta, StoryFn } from '@storybook/react';
 import { Chip, ChipProps } from '@mui/material';
-import theme from '../../../themes';
+import theme from '../../../theme';
 import { action } from '@storybook/addon-actions';
 export default {
   title: 'Atoms/Chip',

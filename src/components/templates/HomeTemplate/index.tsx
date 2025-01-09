@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid, styled } from '@mui/material';
 import Sidebar from '../../organisms/Sidebar';
-import theme from '../../../themes';
+import theme from '../../../theme';
 
 interface DashBoardLayoutPropType {
   header: React.JSX.Element[] | React.JSX.Element;

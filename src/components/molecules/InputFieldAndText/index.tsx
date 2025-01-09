@@ -3,7 +3,7 @@ import { Stack } from '@mui/material';
 import Text from '../../atoms/Typography/index';
 import { styled } from '@mui/material/styles';
 import { InputField } from '../../atoms/InputField/index';
-import theme from '../../../themes';
+import theme from '../../../theme';
 
 interface InputFieldAndTextProps {
   textBody: string;
@@ -33,7 +33,7 @@ const InputFieldAndText = ({
     <InputFieldAndTextContainer>
       <Text
         variant='body1'
-        textBody={textBody}
+        text={textBody}
         sx={{
           color: theme.palette.primary.primaryTextLowEmp,
         }}
@@ -52,7 +52,5 @@ const InputFieldAndText = ({
     </InputFieldAndTextContainer>
   );
 };
-
-InputFieldAndText.defaultProps = {};
 
 export default InputFieldAndText;

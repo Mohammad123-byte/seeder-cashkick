@@ -1,11 +1,11 @@
 import React from 'react';
 import { InputField } from './index';
 import { Meta, StoryObj } from '@storybook/react';
-import theme from '../../../themes';
+import theme from '../../../theme';
 
 const meta: Meta<typeof InputField> = {
   component: InputField,
-  title: 'atoms/InputField',
+  title: 'Atoms/InputField',
   tags: ['autodocs'],
 };
 

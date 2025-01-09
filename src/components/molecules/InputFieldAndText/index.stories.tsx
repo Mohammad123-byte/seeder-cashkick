@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
-import theme from '../../../themes';
+import theme from '../../../theme';
 import InputFieldAndText from '.';
 
 const meta: Meta<typeof InputFieldAndText> = {

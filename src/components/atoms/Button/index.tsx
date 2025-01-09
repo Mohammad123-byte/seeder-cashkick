@@ -1,23 +1,21 @@
-import Button, { ButtonProps as MuiButtonProps } from '@mui/material/Button';
+import {
+  Button as MuiButton,
+  ButtonProps as MuiButtonProps,
+} from '@mui/material';
 import React from 'react';
 
-export interface ButtonPropsType extends MuiButtonProps {
+export interface ButtonProps extends MuiButtonProps {
   label: string;
-  style?: React.CSSProperties;
-  onClick?: () => void;
+  sx?: object; // Use sx instead of style
+  onClick?: React.MouseEventHandler<HTMLButtonElement>; // Proper type for onClick
 }
 
-const TextButton = ({ label, style, ...props }: ButtonPropsType) => {
+const Button = ({ label, sx, ...props }: ButtonProps) => {
   return (
-    <Button sx={style} {...props}>
+    <MuiButton sx={{ textTransform: 'none', ...sx }} {...props}>
       {label}
-    </Button>
+    </MuiButton>
   );
 };
 
-TextButton.defaultProps = {
-  style: { textTransform: 'none' },
-  disabled: false,
-};
-
-export default TextButton;
+export default Button;

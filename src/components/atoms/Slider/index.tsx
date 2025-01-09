@@ -1,22 +1,22 @@
 import React from 'react';
-import { Slider } from '@mui/material';
-import theme from '../../../themes';
+import { Slider as MuiSlider } from '@mui/material';
+import theme from '../../../theme';
 
 export interface SliderProps {
   onChange?: (value: number) => string;
   value: number;
   maxValue: number;
-  onSliderChange?: (event: Event, newValue: number | number[]) => void; // Fixed typo: `onSilderChange` -> `onSliderChange`
+  onSliderChange?: (event: Event, newValue: number | number[]) => void;
 }
 
-export const Slide = ({
+export const Slider = ({
   value,
   maxValue,
   onChange,
   onSliderChange, // Updated prop name
 }: SliderProps) => {
   return (
-    <Slider
+    <MuiSlider
       value={value}
       defaultValue={0.0}
       getAriaValueText={onChange}

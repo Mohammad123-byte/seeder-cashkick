@@ -2,10 +2,10 @@ import React from 'react';
 import { Stack, styled } from '@mui/material';
 import Icon from '../../../../public/assests/icons/DropDown.svg';
 import Avtar from '../../atoms/Avtar';
-import Icons from '../../atoms/Icons/index';
+import Icons from '../../atoms/Icon/index';
 
 interface AvtarProps {
-  src?: string;
+  src: string;
   alt?: string;
   width?: string;
   height?: string;
@@ -25,11 +25,6 @@ const AvtarIcon = ({ height, width, alt = 'My Pic', ...props }: AvtarProps) => {
       <Icons src={Icon} alt='drop-down-icon' />
     </AvatarStack>
   );
-};
-
-AvtarIcon.defaultProps = {
-  height: '34px',
-  width: '34px',
 };
 
 export default AvtarIcon;

@@ -4,7 +4,7 @@ import Paper from '@mui/material/Paper';
 import Text from '../../atoms/Typography';
 import CircularProgressWithLabel from '../../atoms/CircularProgressBar/index';
 import InfoCircle from '../../../../public/assests/icons/info-circle.svg';
-import theme from '../../../themes/index';
+import theme from '../../../theme/index';
 
 interface ProgressBarProps {
   width?: string;
@@ -56,11 +56,11 @@ const ProgressBar = ({
             </Box>
             <Stack direction='column' gap={1}>
               <Stack direction='row' gap={2}>
-                <Text variant='body1' textBody={label} />
+                <Text variant='body1' text={label} />
                 <img src={InfoCircle} alt='infoCircle' width={20} />
               </Stack>
 
-              <Text variant='heading2' textBody={amount} />
+              <Text variant='heading2' text={amount} />
             </Stack>
           </Stack>
         </Paper>

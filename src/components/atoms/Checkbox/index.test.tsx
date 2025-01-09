@@ -1,10 +1,10 @@
 import { render, screen } from '@testing-library/react';
-import CheckboxLabels from '.';
+import CheckboxLabel from '.';
 
 import '@testing-library/jest-dom';
 
 test('testing the checkbox', () => {
-  render(<CheckboxLabels label={''} />);
+  render(<CheckboxLabel label={''} />);
 
   const checkboxElement = screen.getByRole('checkbox');
   expect(checkboxElement).toBeInTheDocument();

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, StoryFn } from '@storybook/react';
-import Text, { TextProps } from '.';
+import Text, { TypographyProps } from '.';
 
 export default {
   title: 'Atoms/Typography',
@@ -8,49 +8,61 @@ export default {
   component: Text,
   argTypes: {
     sx: { control: 'object' },
+    variant: {
+      control: 'select',
+      options: [
+        'title',
+        'heading1',
+        'heading2',
+        'body1',
+        'body2',
+        'caption',
+        'button',
+      ],
+    },
   },
 } as Meta;
 
-const Template: StoryFn<TextProps> = (args) => <Text {...args} />;
+const Template: StoryFn<TypographyProps> = (args) => <Text {...args} />;
 
 export const Title = Template.bind({});
 Title.args = {
   variant: 'title',
-  textBody: 'Title Text',
+  text: 'Title Text',
 };
 
 export const Heading1 = Template.bind({});
 Heading1.args = {
   variant: 'heading1',
-  textBody: 'Heading 1 Text',
+  text: 'Heading 1 Text',
 };
 
 export const Heading2 = Template.bind({});
 Heading2.args = {
   variant: 'heading2',
-  textBody: 'Heading 2 Text',
+  text: 'Heading 2 Text',
 };
 
 export const Body1 = Template.bind({});
 Body1.args = {
   variant: 'body1',
-  textBody: 'Body 1 Text',
+  text: 'Body 1 Text',
 };
 
 export const Body2 = Template.bind({});
 Body2.args = {
   variant: 'body2',
-  textBody: 'Body 2 Text',
+  text: 'Body 2 Text',
 };
 
 export const Caption = Template.bind({});
 Caption.args = {
   variant: 'caption',
-  textBody: 'Caption Text',
+  text: 'Caption Text',
 };
 
 export const Button = Template.bind({});
 Button.args = {
   variant: 'button',
-  textBody: 'Button Text',
+  text: 'Button Text',
 };

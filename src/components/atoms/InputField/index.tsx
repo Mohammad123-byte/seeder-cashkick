@@ -1,6 +1,6 @@
 import { TextField } from '@mui/material';
 import React from 'react';
-import theme from '../../../themes';
+import theme from '../../../theme';
 
 interface InputFieldProps {
   variant?: 'filled' | 'outlined' | 'standard';
@@ -13,18 +13,18 @@ interface InputFieldProps {
   type: string; // Changed `any` to `string` for better type safety
 }
 
-export const InputField: React.FC<InputFieldProps> = (props) => {
-  const {
-    variant = 'filled',
-    label = '',
-    fontColor = 'black',
-    placeholder,
-    onChangeFun,
-    value,
-    name,
-    type,
-  } = props;
-
+export const InputField: React.FC<InputFieldProps> = ({
+  variant = 'filled',
+  label = '',
+  fontColor = 'black',
+  placeholder,
+  onChangeFun,
+  value,
+  name,
+  type,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  ...props
+}) => {
   return (
     <TextField
       variant={variant}

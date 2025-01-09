@@ -3,7 +3,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Text from '../../atoms/Typography';
 import TextButton from '../../atoms/Button';
-import theme from '../../../themes';
+import theme from '../../../theme';
 import { styled } from '@mui/material/styles';
 import Stack from '@mui/material/Stack';
 
@@ -54,14 +54,14 @@ const CardMolecule = ({
       <StyledCardContent>
         <Text
           variant='heading1'
-          textBody={heading}
+          text={heading}
           sx={{
             color: theme.palette.primary.primaryTextHighEmp,
           }}
         />
         <Text
           variant='heading1'
-          textBody={subHeading}
+          text={subHeading}
           sx={{
             color: theme.palette.primary.primaryTextHighEmp,
           }}
@@ -70,7 +70,7 @@ const CardMolecule = ({
         <Stack direction='row' sx={{ marginTop: '10px', gap: '5px' }}>
           <Text
             variant='body1'
-            textBody={body}
+            text={body}
             sx={{
               color: theme.palette.primary.primaryTextLowEmp,
             }}
@@ -78,14 +78,14 @@ const CardMolecule = ({
 
           <Text
             variant='body1'
-            textBody={`$${availableCash.toFixed(2)}`}
+            text={`$${availableCash.toFixed(2)}`}
             sx={{
               color: theme.palette.primary.primaryTextMidEmp,
             }}
           />
           <Text
             variant='body1'
-            textBody='available'
+            text='available'
             sx={{
               color: theme.palette.primary.primaryTextLowEmp,
             }}
@@ -93,7 +93,7 @@ const CardMolecule = ({
         </Stack>
         <Text
           variant='body1'
-          textBody={subBody}
+          text={subBody}
           sx={{
             color: theme.palette.primary.primaryTextLowEmp,
           }}

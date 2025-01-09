@@ -1,9 +1,9 @@
 import React, { useState, useCallback } from 'react';
 import { Stack, Box } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import Icons from '../../atoms/Icons';
+import Icons from '../../atoms/Icon';
 import Text from '../../atoms/Typography';
-import theme from '../../../themes';
+import theme from '../../../theme';
 import SidebarElement from '../../molecules/SideBarElement';
 import HomeIcon from '../../../../public/assests/icons/HomeIcon.svg';
 import CashAccelerationIcon from '../../../../public/assests/icons/CashAccleration.svg';
@@ -74,7 +74,7 @@ const Sidebar: React.FC = () => {
         <Icons src={LogoIcon} alt='logo icon' width='29.9px' height='28px' />
         <Text
           variant='title'
-          textBody='Seeder'
+          text='Seeder'
           sx={{
             color: theme.palette.primary.primaryTextHighEmp,
             fontSize: '24px',

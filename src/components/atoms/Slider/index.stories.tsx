@@ -1,14 +1,14 @@
 import React from 'react';
 import { StoryFn, Meta } from '@storybook/react';
-import { Slide, SliderProps } from '../Slider/index';
+import { Slider, SliderProps } from '../Slider/index';
 
 export default {
-  title: 'atoms/Slider',
-  component: Slide,
+  title: 'Atoms/Slider',
+  component: Slider,
 } as Meta;
 
 const Template: StoryFn<SliderProps> = (args: SliderProps) => (
-  <Slide {...args} />
+  <Slider {...args} />
 );
 
 export const Default = Template.bind({});

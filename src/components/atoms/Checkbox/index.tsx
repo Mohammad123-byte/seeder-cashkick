@@ -1,31 +1,24 @@
 import React from 'react';
 import Checkbox from '@mui/material/Checkbox';
 import FormControlLabel from '@mui/material/FormControlLabel';
-import theme from '../../../themes';
+import theme from '../../../theme';
 import { ThemeProvider } from '@mui/material';
 
 export interface CheckboxLabelsProps {
   label: string;
   required?: boolean;
-  disabled?: boolean;
   defaultChecked?: boolean;
 }
 
-const CheckboxLabels = ({
-  label,
-  defaultChecked,
-  disabled,
-}: CheckboxLabelsProps) => {
+const CheckboxLabel = ({ label, defaultChecked }: CheckboxLabelsProps) => {
   return (
     <ThemeProvider theme={theme}>
       <FormControlLabel
-        control={
-          <Checkbox defaultChecked={defaultChecked} disabled={disabled} />
-        }
+        control={<Checkbox defaultChecked={defaultChecked} />}
         label={label}
       />
     </ThemeProvider>
   );
 };
 
-export default CheckboxLabels;
+export default CheckboxLabel;

@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-empty-interface */
 import { createTheme, SxProps } from '@mui/material/styles';
 
-export const defaultTheme = createTheme();
+// export const defaultTheme = createTheme();
 
 declare module '@mui/material/styles' {
   interface PaletteOptions {

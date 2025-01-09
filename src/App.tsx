@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import { Box } from '@mui/material';
 import Sidebar from './components/organisms/Sidebar';
 import HomePage from './pages/HomePage/HomePage';
 import CashAccelerationPage from './pages/CashAccelarationPage/CashAccelerationPage';
@@ -8,9 +9,9 @@ import CashAccelerationPage from './pages/CashAccelarationPage/CashAccelerationP
 function App() {
   return (
     <Router>
-      <div style={{ display: 'flex' }}>
+      <Box display='flex'>
         <Sidebar />
-        <main style={{ flexGrow: 1, padding: '20px' }}>
+        <Box component='main' flexGrow={1} padding='20px'>
           <Routes>
             <Route path='/' element={<HomePage />} />
             <Route
@@ -18,8 +19,8 @@ function App() {
               element={<CashAccelerationPage />}
             />
           </Routes>
-        </main>
-      </div>
+        </Box>
+      </Box>
     </Router>
   );
 }

@@ -4,7 +4,7 @@ import '@testing-library/jest-dom/extend-expect';
 
 describe('Text component', () => {
   it('renders with custom variant and text', () => {
-    render(<Text variant='body2' textBody='Custom Text' />);
+    render(<Text variant='body2' text='Custom Text' />);
     const textElement = screen.getByText('Custom Text');
 
     expect(textElement).toBeInTheDocument();

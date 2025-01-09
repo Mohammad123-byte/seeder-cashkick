@@ -8,11 +8,11 @@ interface IconProps {
   height?: string;
   clickHandler?: () => void;
 }
-const Icons = (props: IconProps) => {
+const Icon = (props: IconProps) => {
   return (
     <Box onClick={props.clickHandler}>
       <img
-        src={`${props.src}`}
+        src={props.src}
         alt={props.alt}
         width={props.width}
         height={props.height}
@@ -21,4 +21,4 @@ const Icons = (props: IconProps) => {
   );
 };
 
-export default Icons;
+export default Icon;

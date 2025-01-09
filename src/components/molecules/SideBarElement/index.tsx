@@ -1,8 +1,8 @@
 import React from 'react';
 import { Box, Stack, styled } from '@mui/material';
-import theme from '../../../themes';
+import theme from '../../../theme';
 import Text from '../../atoms/Typography';
-import Icons from '../../atoms/Icons';
+import Icons from '../../atoms/Icon';
 
 const LeftNavElemntBox = styled(Box)(({ active }: { active?: string }) => ({
   backgroundColor:
@@ -39,16 +39,12 @@ const SidebarElement = ({
               ? theme.palette.primary.primaryTextLowEmp
               : theme.palette.primary.primaryTextHighEmp,
           }}
-          textBody={title}
+          text={title}
           variant='body2'
         />
       </Stack>
     </LeftNavElemntBox>
   );
-};
-
-SidebarElement.defaultProps = {
-  active: false,
 };
 
 export default SidebarElement;

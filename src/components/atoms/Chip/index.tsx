@@ -1,15 +1,14 @@
 import React from 'react';
-import { Chip, ChipProps } from '@mui/material';
+import { Chip as MuiChip, ChipProps as MuiChipProps } from '@mui/material';
 
-interface TextChipProps extends ChipProps {
+interface ChipProps extends MuiChipProps {
   label?: string;
-  style?: React.CSSProperties;
+  sx?: object; // Use sx instead of style
   onClick?: () => void;
 }
-export const TextChip = ({ label, style, ...props }: TextChipProps) => {
+
+export const Chip = ({ label, sx, ...props }: ChipProps) => {
   return (
-    <>
-      <Chip sx={style} {...props} label={label}></Chip>
-    </>
+    <MuiChip sx={{ textTransform: 'none', ...sx }} {...props} label={label} />
   );
 };
